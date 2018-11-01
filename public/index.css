@@ -7,3 +7,25 @@ img {
   width: 7.11rem;
   height: auto;
 }
+
+/* body {
+  justify-content: center;
+} */
+
+#container {
+  width: 80%;
+  margin: auto;
+  /* display: flex; */
+}
+
+#Item {
+  
+}
+
+#Reviews {
+  width:100%;
+} 
+
+#Store {
+
+}

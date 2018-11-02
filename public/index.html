@@ -28,6 +28,8 @@
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="http://ec2-18-191-75-80.us-east-2.compute.amazonaws.com/bundle.js"></script>
+    <script src="http://18.191.123.82/app.js"></script>
+    
     <!-- <script src="http://localhost:3002/app.js"></script>
     <script src="http://localhost:3003/app.js"></script>
     <script src="http://localhost:3004/app.js"></script> -->
@@ -37,10 +39,10 @@
         React.createElement(Reviews),
         document.getElementById('Reviews')
       );
-      // ReactDOM.render(
-      //   React.createElement(CountDown),
-      //   document.getElementById('CountDown')
-      // );
+      ReactDOM.render(
+        React.createElement(PhotoCarousel),
+        document.getElementById('Item')
+      );
       // ReactDOM.render(
       //   React.createElement(Related),
       //   document.getElementById('Related')

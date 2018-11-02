@@ -1,0 +1,28 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "connect": "ssh -i proxyKey.pem ubuntu@ec2-18-218-82-247.us-east-2.compute.amazonaws.com && cd Wyatt_proxy && node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Etsi-NYC/Wyatt_proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Etsi-NYC/Wyatt_proxy/issues"
+  },
+  "homepage": "https://github.com/Etsi-NYC/Wyatt_proxy#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "react-bootstrap": "^0.32.4",
+    "react-slick": "^0.23.2",
+    "slick-carousel": "^1.8.1"
+  }
+}

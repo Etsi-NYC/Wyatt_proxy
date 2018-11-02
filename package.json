@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "connect": "ssh -i proxyKey.pem ubuntu@ec2-18-218-82-247.us-east-2.compute.amazonaws.com && cd Wyatt_proxy && node server.js",
-    "start": "node server.js"
+    "start": "pm2 start server.js",
+    "restart": "pm2 restart 0",
+    "end": "pm2 stop all"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "morgan": "^1.9.1",
+    "pm2": "^3.2.2",
     "react-bootstrap": "^0.32.4",
     "react-slick": "^0.23.2",
     "slick-carousel": "^1.8.1"
